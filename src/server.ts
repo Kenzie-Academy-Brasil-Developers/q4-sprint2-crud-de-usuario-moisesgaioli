@@ -1,10 +1,10 @@
 import "reflect-metadata"
 import { createConnection } from "typeorm"
-import dbConfig from "./db/ormconfig"
+import db from "./db/ormconfig"
 import app from "./app"
 
 
-createConnection(dbConfig)
+createConnection(db)
     .then(() => {
         const PORT = process.env.PORT
         console.log("Database connected")
