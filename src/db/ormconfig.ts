@@ -8,6 +8,7 @@ dotenv.config()
 const dbConfig = {
    "type": "postgres",
    "host": "localhost",
+   "utl": process.env.DATABASE_URL,
    "port": 5432,
    "username": "postgres",
    "password": process.env.POSTGRES_PASSWORD,
